@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Biases List</string>
+    <string name="bias_name">Bias Name</string>
+    <string name="detail">Detail</string>
+    <string name="title">My Biases List</string>
+    <string name="username">Muhammad Izzudin</string>
+    <string name="email">mohammadzzudin@gmail.com</string>
+</resources>

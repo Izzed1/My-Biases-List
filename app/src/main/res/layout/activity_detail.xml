@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        tools:ignore="contentDescription">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:src="@drawable/ic_previous" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:text="Name"
+                android:textAllCaps="true"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:paddingEnd="20dp"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/main_photo"
+            android:layout_width="360dp"
+            android:layout_height="480dp"
+            android:layout_gravity="center"
+            tools:src="@drawable/img_eunha" />
+
+        <TextView
+            android:id="@+id/tv_real_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="20dp"
+            tools:text="Real Name"
+            android:drawablePadding="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_birthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Birthdate"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    app:drawableStartCompat="@drawable/ic_calendar"
+                    android:drawablePadding="7dp" />
+
+                <TextView
+                    android:id="@+id/tv_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Height"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:paddingTop="10dp"
+                    app:drawableStartCompat="@drawable/ic_height"
+                    android:drawablePadding="7dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_blood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Blood Type"
+                    android:drawablePadding="7dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    app:drawableStartCompat="@drawable/ic_blood_type"/>
+
+                <TextView
+                    android:id="@+id/tv_zodiac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Zodiac"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:paddingTop="10dp"
+                    app:drawableStartCompat="@drawable/ic_astrology"
+                    android:drawablePadding="7dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="description..."
+            android:justificationMode="inter_word"
+            android:lineSpacingMultiplier="1.4"
+            android:background="@drawable/content_edit_background"
+            android:backgroundTint="#FFECEDEF"
+            android:padding="20dp"
+            app:layout_constraintTop_toBottomOf="@id/main_photo"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="UnusedAttribute" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>
